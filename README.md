@@ -1,1 +1,1 @@
-# Barrel-of-Laughs-Brewery
+# Barrel of Laughs Brewery
