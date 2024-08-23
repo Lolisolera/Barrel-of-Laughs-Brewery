@@ -51,7 +51,7 @@ h1 {
 }
 
 .card:hover {
-    color: rgb(88 199 250 / 100%);
+    color: black;
     transition: color 1s;
 }
 
@@ -67,9 +67,9 @@ h1 {
     height: 102%;
     border-radius: 8px;
     background-image: linear-gradient(var(--rotate),
-            #5ddcff,
-            #3c67e3 43%,
-            #4e00c2);
+            #F0ECE5,
+            #B6BBC4 43%,
+            #31304D);
     position: absolute;
     z-index: -1;
     top: -1%;
@@ -90,9 +90,9 @@ h1 {
     transform: scale(0.8);
     filter: blur(calc(var(--card-height) / 6));
     background-image: linear-gradient(var(--rotate),
-            #5ddcff,
-            #3c67e3 43%,
-            #4e00c2);
+            #F0ECE5,
+            #B6BBC4 43%,
+            #31304D);
     opacity: 1;
     transition: opacity 0.5s;
     animation: spin 2.5s linear infinite;
