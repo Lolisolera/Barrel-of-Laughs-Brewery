@@ -1,26 +1,28 @@
 import express from "express";
-//import bodyParser from "bodyParser";
 import axios from "axios";
 
 const app = express();
 const port = 3000;
 
 app.use(express.static("public"));
-//app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/", async (req, res) => {
     try {
         const result = await axios.get("https://api.openbrewerydb.org/v1/breweries/random");
+
+        // Access the first object in the array
+        const brewery = result.data[0];
+
         res.render("index.ejs", {
-            name: result.data.name,
-            city: result.data.city,
+            name: brewery.name,
+            city: brewery.city,
         });
     } catch (error) {
-        console.log(error.response.data);
-        res.status(500);
+        console.error("Error fetching data from API:", error.message);
+        res.status(500).send("Error fetching data from API");
     }
 });
 
 app.listen(port, () => {
-    console.log(`Server is running on port ${port}`)
+    console.log(`Server is running on port ${port}`);
 });
