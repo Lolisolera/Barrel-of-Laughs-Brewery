@@ -16,7 +16,7 @@ What does it do?
 HTML/CSS, JavaScript, Node.js, Express, Axios, API: https://www.openbrewerydb.org/documentation
 
 
-WARNING: this app will work better if you're a bit drunk 😁
+ADVICE: this app will work better if you're a bit drunk 😁
 
 Created by Lola Marquez 👽
 
